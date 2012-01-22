@@ -17,11 +17,11 @@ Jeweler::Tasks.new do |gem|
   gem.name = "wunderful"
   gem.homepage = "http://github.com/ckundo/wunderful"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{A wrapper for the Wunderground API.}
+  gem.description = %Q{Retrieves data from the Weather API (http://www.wunderground.com/weather/api/)}
   gem.email = "ckundo@gmail.com"
   gem.authors = ["Cameron Cundiff"]
-  # dependencies defined in Gemfile
+  gem.add_dependency 'httparty'
 end
 Jeweler::RubygemsDotOrgTasks.new
 
