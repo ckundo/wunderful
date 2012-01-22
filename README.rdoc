@@ -1,6 +1,6 @@
-= wunderful
+= Wunderful
 
-Description goes here.
+Retrieves data from the Weather API (http://www.wunderground.com/weather/api/)
 
 == Contributing to wunderful
  

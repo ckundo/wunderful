@@ -1,6 +1,8 @@
 require 'httparty'
 
 class Wunderful
+  autoload :Generator, 'wunderful/generator'
+
   include HTTParty
   base_uri "api.wunderful.com"
   
