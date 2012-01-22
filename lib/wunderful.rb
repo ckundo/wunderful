@@ -4,7 +4,7 @@ class Wunderful
   autoload :Generator, 'wunderful/generator'
 
   include HTTParty
-  base_uri BASE_URI
+  base_uri Wunderful::BASE_URI
   
   attr_reader :zip
   
@@ -13,6 +13,6 @@ class Wunderful
   end
 
   def alerts
-    @alerts ||= self.class.get("/api/#{API_KEY}/alerts/q/#{@zip}", :format => :json).alerts
+    @alerts ||= self.class.get("/api/#{Wunderful::API_KEY}/alerts/q/#{@zip}", :format => :json).alerts
   end
 end
