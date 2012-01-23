@@ -1,17 +1,17 @@
 require 'httparty'
-class Wunderful
+require 'pp'
 
-  autoload :Generator, 'wunderful/generator'
+class Wunderful
   include HTTParty
-  
-  attr_reader :zip
-  
+  base_uri 'http://api.wunderground.com'
+  format :json
+
   def initialize(zip)
-    base_uri Wunderful::BASE_URI
     @zip = zip
+    @api_key = Wunderful::API_KEY
   end
 
   def alerts
-    @alerts ||= self.class.get("/api/#{Wunderful::API_KEY}/alerts/q/#{@zip}", :format => :json).alerts
+    @alerts ||= self.class.get("/api/#{@api_key}/alerts/q/#{@zip}.json")['alerts']
   end
 end

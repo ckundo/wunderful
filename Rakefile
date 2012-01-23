@@ -17,7 +17,7 @@ Jeweler::Tasks.new do |gem|
   gem.name = "wunderful"
   gem.homepage = "http://github.com/ckundo/wunderful"
   gem.license = "MIT"
-  gem.summary = %Q{A wrapper for the Wunderground API.}
+  gem.summary = %Q{Easy Rails integration for the Wunderground API.}
   gem.description = %Q{Retrieves data from the Weather API (http://www.wunderground.com/weather/api/)}
   gem.email = "ckundo@gmail.com"
   gem.authors = ["Cameron Cundiff"]
