@@ -1,14 +1,13 @@
 require 'httparty'
-
 class Wunderful
-  autoload :Generator, 'wunderful/generator'
 
+  autoload :Generator, 'wunderful/generator'
   include HTTParty
-  base_uri Wunderful::BASE_URI
   
   attr_reader :zip
   
   def initialize(zip)
+    base_uri Wunderful::BASE_URI
     @zip = zip
   end
 
