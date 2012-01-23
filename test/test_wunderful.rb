@@ -7,7 +7,7 @@ class TestWunderful < Test::Unit::TestCase
       zip = ENV['ZIP'] || '11231'
       @weather = Wunderful.new(zip)
     end
-    
+
     should "return a forecast" do
       assert @weather.forecast != nil
     end

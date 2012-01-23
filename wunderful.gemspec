@@ -5,9 +5,9 @@
 
 Gem::Specification.new do |s|
   s.name = %q{wunderful}
-  s.version = "0.1.0.pre"
+  s.version = "0.1.1"
 
-  s.required_rubygems_version = Gem::Requirement.new("> 1.3.1") if s.respond_to? :required_rubygems_version=
+  s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Cameron Cundiff"]
   s.date = %q{2012-01-22}
   s.description = %q{Retrieves data from the Weather API (http://www.wunderground.com/weather/api/)}
@@ -25,18 +25,18 @@ Gem::Specification.new do |s|
     "Rakefile",
     "VERSION",
     "lib/wunderful.rb",
-    "lib/wunderful/generator.rb",
-    "lib/wunderful/generator/application.rb",
-    "lib/wunderful/generator/options.rb",
-    "lib/wunderful/templates/initializer.rb",
+    "lib/wunderful/exceptions.rb",
+    "lib/wunderful/generators/wunderful/install/install_generator.rb",
+    "lib/wunderful/generators/wunderful/install/templates/initializer.rb",
     "test/helper.rb",
-    "test/test_wunderful.rb"
+    "test/test_wunderful.rb",
+    "wunderful.gemspec"
   ]
   s.homepage = %q{http://github.com/ckundo/wunderful}
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.6.2}
-  s.summary = %q{A wrapper for the Wunderground API.}
+  s.summary = %q{Easy Rails integration for the Wunderground API.}
 
   if s.respond_to? :specification_version then
     s.specification_version = 3
