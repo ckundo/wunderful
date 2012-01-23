@@ -23,6 +23,8 @@ Add to your Gemfile:
 
   gem 'wunderful', :git => 'git://github.com/ckundo/wunderful.git'
   
+Then run:
+
   $ bundle install
   $ rails generate wunderful:install <your_api_key>
 
