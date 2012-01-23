@@ -2,6 +2,25 @@
 
 Retrieves data from the Weather API (http://www.wunderground.com/weather/api/)
 
+== Features
+
+* alerts by zip
+* 3 day forecast by zip
+
+== Usage
+  zip = '11231'
+  weather = Wunderground.new(zip)
+  alerts = weather.alerts
+  forecast = weather.forecast
+
+== Requirements
+
+* HTTParty
+
+== Installation (Rails 3.1 and higher)
+
+  rails generate wunderful:install <your_api_key>
+
 == Contributing to wunderful
  
 * Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet
