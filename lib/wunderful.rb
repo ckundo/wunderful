@@ -11,6 +11,10 @@ class Wunderful
     @api_key = Wunderful::API_KEY
   end
 
+  def forecast
+    @forecast ||= self.class.get("/api/#{@api_key}/forecast/q/#{@zip}.json")['forecast']
+  end
+
   def alerts
     @alerts ||= self.class.get("/api/#{@api_key}/alerts/q/#{@zip}.json")['alerts']
   end

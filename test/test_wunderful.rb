@@ -8,7 +8,11 @@ class TestWunderful < Test::Unit::TestCase
       @weather = Wunderful.new(zip)
     end
     
-    should "return an array of results" do
+    should "return a forecast" do
+      assert @weather.forecast != nil
+    end
+
+    should "return an array of alerts" do
       assert @weather.alerts.kind_of?(Array)
     end
   end
