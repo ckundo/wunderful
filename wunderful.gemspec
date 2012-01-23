@@ -24,10 +24,10 @@ Gem::Specification.new do |s|
     "README.rdoc",
     "Rakefile",
     "VERSION",
+    "lib/generators/wunderful/install/install_generator.rb",
+    "lib/generators/wunderful/install/templates/initializer.rb",
     "lib/wunderful.rb",
     "lib/wunderful/exceptions.rb",
-    "lib/wunderful/generators/wunderful/install/install_generator.rb",
-    "lib/wunderful/generators/wunderful/install/templates/initializer.rb",
     "test/helper.rb",
     "test/test_wunderful.rb",
     "wunderful.gemspec"
