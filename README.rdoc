@@ -1,6 +1,6 @@
 = Wunderful
 
-Retrieves data from the Weather API (http://www.wunderground.com/weather/api/)
+Retrieves data from the Weather API (http://www.wunderground.com/weather/api/).
 
 == Features
 
@@ -19,7 +19,12 @@ Retrieves data from the Weather API (http://www.wunderground.com/weather/api/)
 
 == Installation (Rails 3.1 and higher)
 
-  rails generate wunderful:install <your_api_key>
+Add to your Gemfile:
+
+  gem 'wunderful', :git => 'git://github.com/ckundo/wunderful.git'
+  
+  $ bundle install
+  $ rails generate wunderful:install <your_api_key>
 
 == Contributing to wunderful
  
