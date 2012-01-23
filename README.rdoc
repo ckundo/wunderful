@@ -1,6 +1,6 @@
 = Wunderful
 
-Retrieves data from the Weather API (http://www.wunderground.com/weather/api/).
+Retrieves data from the Weather Underground API (http://www.wunderground.com/weather/api/).
 
 == Features
 
