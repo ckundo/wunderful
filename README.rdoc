@@ -8,12 +8,20 @@ Retrieves data from the Weather Underground API (http://www.wunderground.com/wea
 * 3 day forecast by US zip
 
 == Usage
-  zip = '11231'
-  features = ["geolookup", "astronomy"] # Optional: the request includes conditions, alerts, and 3 day forecast by default
-  weather = Wunderground.new(zip)
-  alerts = weather.alerts
-  forecast = weather.forecast
+  require 'wunderful'
 
+  zip = '11231'
+  features = ["geolookup", "astronomy"] the request includes conditions, alerts, and 3 day forecast by default
+  
+  weather = Wunderful.new(zip, features)
+
+  puts weather              # => full response object (access custom arguments via weather['feature'])
+  puts weather['alerts']    # => returns associated key value
+
+  puts weather.alerts       # => array of alert objects
+  puts weather.forecast     # => hash with 3 day forecast summary
+  puts weather.conditions   # => hash with current conditions
+ 
 == Requirements
 
 * HTTParty

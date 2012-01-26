@@ -5,14 +5,20 @@ class TestWunderful < Test::Unit::TestCase
     setup do
       Wunderful::API_KEY = ENV['API_KEY']
       zip = ENV['ZIP'] || '11231'
-      @weather = Wunderful.new(zip)
+      features = ["geolookup", "astronomy"]
+      @weather = Wunderful.new(zip, features)
+    end
+
+    should "return a key value" do
+      assert @weather.report['forecast']
+      assert @weather.report['alerts']
     end
 
     should "return a report" do
-      assert @weather
+      assert @weather.report
     end
 
-    should "have forecasts" do
+    should "have a forecast" do
       assert @weather.forecast
     end
 
@@ -20,5 +26,8 @@ class TestWunderful < Test::Unit::TestCase
       assert @weather.alerts
     end
 
+     should "have conditions" do
+      assert @weather.conditions
+    end
   end
 end

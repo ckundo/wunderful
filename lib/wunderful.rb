@@ -6,11 +6,12 @@ class Wunderful
   base_uri 'http://api.wunderground.com'
   format :json
 
-  attr_accessor :features
+  attr_accessor :report
 
   def initialize(zip, *args)
     @zip = zip
     @features = %w{ conditions forecast alerts } + args
+    @features.flatten!
     @report = self.class.get("/api/#{Wunderful::API_KEY}/#{@features.join('/')}/q/#{@zip}.json")
   end
 
@@ -22,4 +23,7 @@ class Wunderful
     @alerts ||= @report['alerts']
   end
 
+  def conditions
+    @conditions ||= @report['current_observation']
+  end
 end
