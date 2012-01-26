@@ -13,7 +13,7 @@ class TestWunderful < Test::Unit::TestCase
     end
 
     should "have forecasts" do
-      assert @weather.forecasts
+      assert @weather.forecast
     end
 
     should "have alerts" do

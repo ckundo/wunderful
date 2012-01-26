@@ -10,11 +10,11 @@ class Wunderful
 
   def initialize(zip, *args)
     @zip = zip
-    @features = %w{ geolookup forecast alerts } + args
+    @features = %w{ conditions forecast alerts } + args
     @report = self.class.get("/api/#{Wunderful::API_KEY}/#{@features.join('/')}/q/#{@zip}.json")
   end
 
-  def forecasts
+  def forecast
     @forecast ||= @report['forecast']
   end
 
