@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{wunderful}
-  s.version = "0.1.1"
+  s.version = "0.1.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Cameron Cundiff"]
-  s.date = %q{2012-01-22}
+  s.date = %q{2012-01-25}
   s.description = %q{Retrieves data from the Weather API (http://www.wunderground.com/weather/api/)}
   s.email = %q{ckundo@gmail.com}
   s.extra_rdoc_files = [
