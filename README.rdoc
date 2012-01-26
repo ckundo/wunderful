@@ -4,8 +4,8 @@ Retrieves data from the Weather Underground API (http://www.wunderground.com/wea
 
 == Features
 
-* alerts by zip
-* 3 day forecast by zip
+* US Severe weather alerts by zip
+* 3 day forecast by US zip
 
 == Usage
   zip = '11231'
