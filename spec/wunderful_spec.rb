@@ -1,10 +1,10 @@
 require 'wunderful'
-require "wunderful/api_token"
+require "api_token"
 
 describe Wunderful::Weather do
   before do
     zip = '10012'
-    @weather = Wunderful::Weather.new('2d670c478c064385', zip)
+    @weather = Wunderful::Weather.new(zip)
   end
 
   it "should have an alerts array" do

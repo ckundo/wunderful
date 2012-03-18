@@ -4,9 +4,9 @@ require File.expand_path('../lib/wunderful/version', __FILE__)
 Gem::Specification.new do |gem|
   gem.authors       = ["Cameron Cundiff"]
   gem.email         = ["ckundo@gmail.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
-  gem.homepage      = ""
+  gem.description   = %q{A Ruby gem wrapper for the Weather Underground API.}
+  gem.summary       = %q{Wunderful uses the Weather Underground API to return severe weather alerts and current conditions based on a zip code.}
+  gem.homepage      = "http://github.com/ckundo/wunderful"
 
   gem.files         = `git ls-files`.split($\)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
