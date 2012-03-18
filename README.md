@@ -1,6 +1,6 @@
 # Wunderful
 
-TODO: Write a gem description
+WORK IN PROGRESS
 
 ## Installation
 
